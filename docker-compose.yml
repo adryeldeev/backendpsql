@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+
+  db:
+    image: postgres
+    container_name: adminer
+    restart: always
+    ports: 
+    - 5432:5432
+    environment:
+      - POSTGRES_USER=cadastrouser
+      - POSTGRES_PASSWORD=rootadmin123456
+      - POSTGRES_DB=bdawscreate
+    volumes:
+    - pgdata:/data/postgres
+
+volumes:
+  pgdata:
+    driver: local
+ 

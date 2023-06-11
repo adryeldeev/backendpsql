@@ -1,0 +1,18 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://cadastrouser:rootadmin123456@bd-user.cyapq1zdxu9o.us-east-2.rds.amazonaws.com:5432"
+}
+
+model User{
+  id Int @id @default(autoincrement())
+  name String
+  email String
+  numero BigInt
+}
