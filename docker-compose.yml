@@ -9,9 +9,9 @@ services:
     ports: 
     - 5432:5432
     environment:
-      - POSTGRES_USER=cadastrouser
+      - POSTGRES_USER=dbuser_cliente
       - POSTGRES_PASSWORD=rootadmin123456
-      - POSTGRES_DB=bdawscreate
+      - POSTGRES_DB=db_client
     volumes:
     - pgdata:/data/postgres
 

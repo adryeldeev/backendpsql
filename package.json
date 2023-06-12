@@ -4,8 +4,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
+    "migrate": "^2.0.0",
     "prisma": "^4.15.0",
-    "sucrase": "^3.32.0"
+    "sucrase": "^3.32.0",
+    "up": "^1.0.2"
   },
   "name": "backendpsql",
   "version": "1.0.0",
@@ -20,8 +22,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
-    "dev":"nodemon",
-    "vercel-build":"npx prisma generate"
+    "dev": "nodemon",
+    "vercel-build": "npx prisma generate"
   },
   "author": "",
   "license": "ISC",
