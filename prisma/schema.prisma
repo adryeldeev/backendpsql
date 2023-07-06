@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://dbuser_cliente:rootadmin123456@db-create-cliente.cyapq1zdxu9o.us-east-2.rds.amazonaws.com:5432/db_client"
+  url      = "postgresql://admin_server:Cearasc90@db-admin.csaug14oklqi.us-east-2.rds.amazonaws.com:5432/db-admin"
 }
 
 model User{
